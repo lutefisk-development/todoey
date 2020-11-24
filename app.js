@@ -8,6 +8,11 @@
     // Adding a list item to the todo list
     $("#add-todo").click(function() {
 
+      if($("#todo-input").val() === "") {
+        alert("No valid input added, please try again");
+        return;
+      }
+
       $("#todo-list").append($('<li><i class="fas fa-check"></i>' + $("#todo-input").val() + '<i class="fas fa-times"></i></li>'));
 
       // Empty input field after submit
