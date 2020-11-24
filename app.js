@@ -4,19 +4,16 @@
 (function($) {
 
   $(document).ready(function() {
+
+    // Adding a list item to the todo list
     $("#add-todo").click(function() {
-      // getting the todo-list
-      $list = $("#todo-list");
 
-      // getting the user input
-      $input = $("#todo-input").val();
+      $("#todo-list").append($('<li><i class="fas fa-check"></i>' + $("#todo-input").val() + '<i class="fas fa-times"></i></li>'));
 
-      // creating a list item
-      $todo = $('<li><i class="fas fa-check"></i>' + $input + '<i class="fas fa-times"></i></li>');
+      // Empty input field after submit
+      $("#todo-input").val("");
 
-      // append list item to the list
-      $list.append($todo);
     });
   });
-  
+
 })(jQuery);

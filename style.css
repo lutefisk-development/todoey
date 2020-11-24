@@ -71,6 +71,7 @@ ol li:last-of-type {
 }
 
 .fa-times {
+  cursor: pointer;
   float: right;
   padding-top: 4px;
   color: red;
