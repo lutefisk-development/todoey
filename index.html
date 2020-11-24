@@ -22,20 +22,16 @@
       <h2 class="title is-2">A simple todo app</h2>
       <div class="field has-addons">
         <div class="control">
-          <input class="input" type="text" placeholder="Add Todo Here">
+          <input id="todo-input" class="input" type="text" placeholder="Add Todo Here">
         </div>
         <div class="control">
-          <a class="button is-success">Add</a>
+          <a id="add-todo" class="button is-success">Add</a>
         </div>
       </div>
     </div>
     <div class="column is-full todos">
       <h1 class="title is-1">Todos:</h1>
-      <ol type="A">
-        <li class="is-complete"><i class="fas fa-check"></i>A long text inside<i class="fas fa-times"></i></li>
-        <li><i class="fas fa-check"></i>Tea<i class="fas fa-times"></i></li>
-        <li><i class="fas fa-check"></i>Milk<i class="fas fa-times"></i></li>
-      </ol>
+      <ol type="A" id="todo-list"></ol>
     </div>
   </div>
 
