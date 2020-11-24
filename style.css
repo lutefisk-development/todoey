@@ -1,3 +1,77 @@
+/* Google font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* Typography */
 body {
-  background: lightcoral;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+
+.title {
+  color: #fff;
+}
+
+.title.is-1 {
+  margin: 3rem 0 .5rem 0;
+}
+
+.title.is-2 {
+  margin-bottom: 3rem;
+}
+
+.todos .title {
+  color: #000;
+  margin-bottom: 1.5rem;
+}
+
+/* layout */
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.top {
+  background: rgb(152, 152, 152);
+  margin-bottom: 3rem;
+}
+
+/* user input */
+.field {
+  margin-bottom: 3rem;
+}
+
+/* todo-list */
+ol {
+  list-style-type: none;
+}
+
+ol li {
+  text-align: center;
+  width: 25rem;
+  padding: .5rem 1rem;
+  margin-bottom: .5rem;
+  border: 2px solid #000;
+  border-radius: 5px;
+}
+
+ol li:last-of-type {
+  margin-bottom: 0;
+}
+
+.is-complete {
+  color: #fff;
+  background-color: #48c774;
+}
+
+.fa-check {
+  float: left;
+  padding-top: 4px;
+  color: #fff;
+}
+
+.fa-times {
+  float: right;
+  padding-top: 4px;
+  color: red;
 }
