@@ -22,4 +22,9 @@
     });
   });
 
+  // Remove list item from the todo-list
+  $(document).on("click", "i.fa-times", function() {
+    $(this).parent().remove();
+  });
+
 })(jQuery);
