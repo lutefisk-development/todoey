@@ -27,4 +27,9 @@
     $(this).parent().remove();
   });
 
+  // Updating a todo in todo-list
+  $(document).on("click", "li", function() {
+    $(this).addClass("is-complete");
+  });
+
 })(jQuery);
