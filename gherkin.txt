@@ -1,0 +1,82 @@
+UserStories:
+
+1. Som användare vill jag kunna lägga till nya saker i listan.
+
+2. Som användare vill jag kunna markera saker som är gjorda.
+
+3. Som användare vill jag kunna radera saker från listan.
+ 
+4. Som användare vill jag kontrollera så att tomma fält INTE läggs till i listan.
+
+
+
+Gherkins:
+-------------------------------------------------------------------------------
+Feature:
+Som användare vill jag kunna lägga till nya saker i listan.
+
+Scenario:
+När jag skriver in något i input fältet och klickar på knappen, 
+så ska min lista uppdateras med vad jag skrev in.
+
+Given:
+Att det finns text i input fältet.
+
+When:
+När jag klickar på knappen.
+
+Then:
+Listan uppdateras med min nya todo.
+-------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------
+Feature:
+Som användare vill jag kunna markera saker som är gjorda.
+
+Scenario:
+När jag klickar på en todo i listan så ändras färgen till grönt, texten till vit,
+min todo får en linje genom texten, och "✓" symbolet visas till vänster om texten.
+ 
+Given:
+Att den todo jag klickar på INTE är genomfört (att den är grön, vit text ocksåvidare).
+
+When:
+När jag klickar på en todo.
+
+Then:
+Fägen ändras, text färg ändras, symbolet visas.
+-------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------
+Feature:
+Som användare vill jag kunna radera saker från listan.
+
+Scenario:
+När jag klickar på det röda "X" så raderas just den todo jag klickade på.
+
+Given:
+Att det finns en todo att klicka på.
+
+When:
+När jag klickar på det röda "X".
+
+Then:
+Så tas den tillhörande todo bort från listan (och om det finns andra todo ska dom finnas kvar).
+-------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------
+Feature:
+Som användare vill jag kontrollera så att tomma fält INTE läggs till i listan.
+
+Scenario:
+Det ska inte gå att lägga till todo som inte har någon text.
+
+Given:
+Att det finns text ifylld i input fältet.
+
+When:
+När jag klickar på knappen.
+
+Then:
+Användaren ska få återkoppling om att lägga till text i input fältet.
+-------------------------------------------------------------------------------
