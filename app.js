@@ -29,7 +29,7 @@
 
   // Updating a todo in todo-list
   $(document).on("click", "li", function() {
-    $(this).addClass("is-complete");
+    $(this).toggleClass("is-complete");
   });
 
 })(jQuery);
